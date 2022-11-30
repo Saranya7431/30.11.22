@@ -1,0 +1,21 @@
+cphno=int(input('Enter customer phone number'))
+cname=input('Enter customer name')
+caddress=input('Enter address')
+quantity=int(input('Enter quantity of product'))
+rate=int(input('Enter rate'))
+bill=quantity*rate
+if bill>3000:
+   tax=bill*5/100
+elif bill>2000:
+   tax=bill*7/100
+elif bill>1000:
+   tax=bill*10/100
+elif bill>500:
+   tax=bill*15/100
+else:
+   tax=100
+tax=tax+bill
+print('Customer phone number:',cphno)
+print('Customer name:',cname)
+print('Bill:',bill)
+print('Tax:',tax)
